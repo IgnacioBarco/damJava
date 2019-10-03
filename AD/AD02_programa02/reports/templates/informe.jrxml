@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="08cd7386-c007-4f49-a9ed-b87fde30fac9">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Autor" class="java.lang.String"/>
+	<parameter name="Fecha" class="java.lang.String"/>
+	<parameter name="Titulo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+            CUS."CUSTOMER_ID" AS COD_CLIENTE,
+            CUS."NAME" AS NOMBRE,     
+            COUNT(PUR.ORDER_NUM) AS NUM_ORDENES,
+            COUNT(PUR.PRODUCT_ID) AS NUM_PRODUCTOS,
+            coalesce(SUM(PUR.QUANTITY*PROD.PURCHASE_COST),0) AS IMPORTE
+        FROM
+            "CUSTOMER" CUS 
+                LEFT OUTER JOIN "PURCHASE_ORDER" PUR ON CUS."CUSTOMER_ID" = PUR."CUSTOMER_ID"
+                LEFT OUTER JOIN "PRODUCT" PROD ON PUR."PRODUCT_ID" = PROD."PRODUCT_ID"
+        WHERE
+            CUS.CUSTOMER_ID IS NOT NULL
+        GROUP BY
+            CUS.CUSTOMER_ID,
+            CUS."NAME"]]>
+	</queryString>
+	<field name="COD_CLIENTE" class="java.lang.Integer"/>
+	<field name="NOMBRE" class="java.lang.String"/>
+	<field name="NUM_ORDENES" class="java.lang.Integer"/>
+	<field name="NUM_PRODUCTOS" class="java.lang.Integer"/>
+	<field name="IMPORTE" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="79" uuid="bd7ce754-6ac9-4a23-920c-bf5639f99601"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Titulo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="130" height="40" uuid="cc879f45-dd1e-4153-bde3-fbe844626423"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[Autor:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="0" width="86" height="40" uuid="e2d8357d-ebe8-4a11-84e8-500efa0c0fb0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Autor}+" "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="325" height="40" uuid="a1777026-2bc4-42a9-b0d0-41a746e7b1b7"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["a "+ $P{Fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="51" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="51" uuid="07a624dd-f714-4e71-bcd7-7513f81587b0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="13" width="100" height="20" uuid="56518c8a-40de-4527-954d-2674524ebb7b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[COD_CLIENTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="13" width="100" height="20" uuid="9c27aae0-9c19-4893-b227-14aca990dff8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="13" width="100" height="20" uuid="6bee528e-466a-4907-b1fe-2906a7e607e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NUM_ORDENES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="13" width="100" height="20" uuid="1bb770e4-7aa0-4452-8ced-bc491ee31479"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NUM_PRODUCTOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="13" width="100" height="20" uuid="e28b0487-a657-46bd-8e40-d049e0bfe0e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[IMPORTE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="77" y="0" width="53" height="20" uuid="6beb063c-dfa2-481b-b398-a2db6a5bb039"/>
+				<textElement verticalAlignment="Middle">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COD_CLIENTE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="0" width="81" height="20" uuid="054719f7-75f8-4ff9-90d7-f3976f7f86d4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NOMBRE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="20" uuid="70b04d37-aee3-44ba-8697-86ea57b9bafa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NUM_ORDENES}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="20" uuid="3d8514de-a3d8-4777-b302-e914ff8d64c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NUM_PRODUCTOS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="82" height="20" uuid="51c4755b-7655-4c2e-9706-915f63bbeafa"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{IMPORTE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="351">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="39" uuid="f2a114f6-8975-4f6e-99b8-488e493e9cd8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="8" width="100" height="20" uuid="3a49f53c-d0bd-4a62-bfbb-5fbed3495f5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isItalic="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Total clientes ==>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="8" width="31" height="20" uuid="30e672fc-1fb8-42f0-b229-1374e4c0cfa0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<asignatura codasig="1">
+        <nombreasig>Aplicaciones Web</nombreasig>
+        <precioasig>70</precioasig>
+        <tipoasig>A</tipoasig>
+        <creditos>16</creditos>
+		<aula>B14</aula>
+ </asignatura>
+
+	

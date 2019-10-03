@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+    <alumno codalum="4">
+        <nombre>Pedro Reneses</nombre>
+        <direccion>Avd Los Danzantes 1</direccion>
+        <poblacion>Toledo</poblacion>
+        <telef>925770099</telef>
+    </alumno>
+
+   

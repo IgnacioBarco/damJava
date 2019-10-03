@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<curso>
+    <profesor pais="Espana">
+        <nombre>Jesus Dieguez</nombre>
+        <asignatura>acceso a datos</asignatura>
+        <especialidad>DAM</especialidad>
+        <curso>Distancia</curso>
+        <modalidad>2</modalidad>
+    </profesor>
+    <comentario>este el un curso del ribera</comentario>
+    <alumnos>
+        <alumno>
+            <nombreAlumno>Luis</nombreAlumno>
+            <edad>18</edad>
+            <direccion>Calle AAAAAAAA</direccion>
+            <comentario>aaaaaaaaaaaaaa</comentario>
+            <telefono>666123456</telefono>
+        </alumno>
+        <alumno>
+            <nombreAlumno>Antonio</nombreAlumno>
+            <edad>31</edad>
+            <direccion>Calle BBBBBBB</direccion>
+            <comentario>bbbbbbbbbbbbbb</comentario>
+            <telefono>666222222</telefono>
+        </alumno>
+        <alumno>
+            <nombreAlumno>Alfredo</nombreAlumno>
+            <edad>45</edad>
+            <direccion>Calle CCCCCC</direccion>
+            <comentario>cccccccccccccc</comentario>
+            <telefono>666000123</telefono>
+        </alumno>
+    </alumnos>
+</curso>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<asignatura codasig="8">
+        <nombreasig>XQuery</nombreasig>
+        <precioasig>100</precioasig>
+        <tipoasig>C</tipoasig>
+        <creditos>12</creditos>
+		<aula>B12</aula>
+ </asignatura>
+
+	

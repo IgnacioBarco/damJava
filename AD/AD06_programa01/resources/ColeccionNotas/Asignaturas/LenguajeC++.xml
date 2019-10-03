@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<asignatura codasig="3">
+        <nombreasig>Lenguaje C++</nombreasig>
+        <precioasig>70</precioasig>
+        <tipoasig>A</tipoasig>
+        <creditos>10</creditos>
+		<aula>B14</aula>
+ </asignatura>
+
+	

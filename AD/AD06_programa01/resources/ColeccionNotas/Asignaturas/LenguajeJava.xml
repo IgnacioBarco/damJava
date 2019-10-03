@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<asignatura codasig="4">
+        <nombreasig>Lenguaje Java</nombreasig>
+        <precioasig>50</precioasig>
+        <tipoasig>B</tipoasig>
+        <creditos>15</creditos>
+		<aula>B12</aula>
+ </asignatura>
+
+	

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<asignatura codasig="6">
+        <nombreasig>Redes Lan</nombreasig>
+        <precioasig>80</precioasig>
+        <tipoasig>B</tipoasig>
+        <creditos>12</creditos>
+		<aula>B14</aula>
+ </asignatura>
+
+	

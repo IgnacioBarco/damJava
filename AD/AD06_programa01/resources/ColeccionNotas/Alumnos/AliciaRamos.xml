@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+    <alumno codalum="1">
+        <nombre>Alicia Ramos</nombre>
+        <direccion>Avd la seda 10</direccion>
+        <poblacion>Talavera</poblacion>
+        <telef>12345</telef>
+    </alumno>
+
+   

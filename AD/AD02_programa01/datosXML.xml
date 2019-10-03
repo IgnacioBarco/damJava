@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datosempledepart>
+    <departamento>
+        <codigodep>1</codigodep>
+        <nombredep>AccesoDatos</nombredep>
+        <localidad>Talavera</localidad>
+        <presupuesto>100000</presupuesto>
+    </departamento>
+    <empleados>
+        <emple>
+            <empno>1</empno>
+            <apellido>aaaa</apellido>
+            <oficio>AAAA</oficio>
+            <salario>10000.0</salario>
+        </emple>
+        <emple>
+            <empno>2</empno>
+            <apellido>bbbb</apellido>
+            <oficio>BBBB</oficio>
+            <salario>20000.0</salario>
+        </emple>
+    </empleados>
+</datosempledepart>

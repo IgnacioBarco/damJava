@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+    <alumno codalum="3">
+        <nombre>Juan Valdés</nombre>
+        <direccion>Calle Los puentes 20</direccion>
+        <poblacion>Talavera</poblacion>
+        <telef>92512345</telef>
+    </alumno>
+
+   

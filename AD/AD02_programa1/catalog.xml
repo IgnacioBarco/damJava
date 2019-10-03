@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/programas/JavaProgramas/programacion/AD02_programa1/resources/clase.xsd" uri="xml-resources/jaxb/ClaseJABX/clase.xsd"/>
+</catalog>

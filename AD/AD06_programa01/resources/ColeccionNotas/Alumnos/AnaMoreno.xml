@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+    <alumno codalum="2">
+        <nombre>Ana Moreno</nombre>
+        <direccion>Avenida de Madrid 20</direccion>
+        <poblacion>Oropesa</poblacion>
+        <telef>925409988</telef>
+    </alumno>
+
+   

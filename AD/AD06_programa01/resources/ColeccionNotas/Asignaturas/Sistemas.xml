@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<asignatura codasig="7">
+        <nombreasig>Sistemas</nombreasig>
+        <precioasig>80</precioasig>
+        <tipoasig>C</tipoasig>
+        <creditos>10</creditos>
+		<aula>B11</aula>
+ </asignatura>
+
+	
