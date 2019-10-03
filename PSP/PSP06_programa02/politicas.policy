@@ -1,0 +1,13 @@
+/* AUTOMATICALLY GENERATED ON Mon Apr 16 23:31:04 CEST 2018*/
+/* DO NOT EDIT */
+
+grant codeBase "file:/D:/programas/JavaProgramas/programacion/PSP06_programa02/-" {
+  permission java.util.logging.LoggingPermission "control";
+  permission java.io.FilePermission "<<ALL FILES>>", "read, write";
+  permission java.util.PropertyPermission "user.home", "read";
+};
+
+grant codeBase "file:/c:/datos/*" {
+  permission java.io.FilePermission "<<ALL FILES>>", "read";
+};
+

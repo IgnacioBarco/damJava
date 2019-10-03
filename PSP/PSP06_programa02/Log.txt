@@ -1,0 +1,18 @@
+abr 16, 2018 10:37:30 PM Aplicacion crearLog
+CONFIGURAR: Se inicia el log
+abr 16, 2018 10:37:34 PM Aplicacion operativaUsuario
+INFORMACIÓN: LOGIN: Se ha logado asasasas
+abr 16, 2018 10:37:40 PM Aplicacion operativaArchivo
+INFORMACIÓN: FILE: Se muestra el archivo abc.txt
+abr 16, 2018 10:37:40 PM Archivo mostrarArchivo
+GRAVE: Fallo al crear el buffer: java.io.FileNotFoundException: c:\datos\abc.txt (El sistema no puede encontrar la ruta especificada)
+abr 16, 2018 10:37:40 PM Archivo mostrarArchivo
+GRAVE: Fallo al cerrar el buffer: java.lang.NullPointerException
+abr 16, 2018 10:37:51 PM Aplicacion operativaUsuario
+INFORMACIÓN: LOGIN: Se ha logado ghghghgh
+abr 16, 2018 10:37:57 PM Aplicacion operativaArchivo
+INFORMACIÓN: FILE: Se muestra el archivo log.txt
+abr 16, 2018 10:37:57 PM Archivo mostrarArchivo
+GRAVE: Fallo al crear el buffer: java.io.FileNotFoundException: c:\datos\log.txt (El sistema no puede encontrar la ruta especificada)
+abr 16, 2018 10:37:57 PM Archivo mostrarArchivo
+GRAVE: Fallo al cerrar el buffer: java.lang.NullPointerException

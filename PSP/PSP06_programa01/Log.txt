@@ -1,0 +1,6 @@
+abr 16, 2018 9:48:49 PM Aplicacion crearLog
+CONFIGURAR: Se inicia el log
+abr 16, 2018 9:48:53 PM Aplicacion operativaUsuario
+INFORMACIÓN: LOGIN: Se ha logado asdfasdg
+abr 16, 2018 9:48:59 PM Aplicacion operativaArchivo
+INFORMACIÓN: FILE: Se muestra el archivo abc.txt
