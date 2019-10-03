@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<map version="1.0">
+  
+	<mapID target="Principal" url="fuentes/Principal.html"/>
+ 
+	<mapID target="Pagina01" url="fuentes/Pagina01.html"/>
+
+   	<mapID target="Pagina02" url="fuentes/Pagina02.html"/>
+   
+	<mapID target="Pagina03" url="fuentes/Pagina03.html"/>
+   
+	<mapID target="Pagina04" url="fuentes/Pagina04.html"/>
+   
+	<mapID target="Pagina05" url="fuentes/Pagina05.html"/>
+
+</map>

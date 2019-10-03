@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<toc version="1.0">
+   <tocitem text="Pagina Principal Ejemplo JavaHelp" target="Principal">
+      	<tocitem text="Ventana de la pagina 1" target="Pagina01"/>
+      	<tocitem text="Ventana de la pagina 2" target="Pagina02"/>
+	<tocitem text="Ventana de la pagina 3" target="Pagina03"/>
+	<tocitem text="Ventana de la pagina 4" target="Pagina04"/>
+	<tocitem text="Ventana de la pagina 5" target="Pagina05"/>
+   </tocitem>
+</toc>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5c8437b7-fff8-4d2e-98c4-35d5c9cdea8c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\programas\\JavaProgramas\\programacion\\Di05_programa01\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     ADDRESS."ID" AS ADDRESS_ID,
+     ADDRESS."FIRSTNAME" AS ADDRESS_FIRSTNAME,
+     ADDRESS."LASTNAME" AS ADDRESS_LASTNAME,
+     ADDRESS."STREET" AS ADDRESS_STREET,
+     ADDRESS."CITY" AS ADDRESS_CITY
+FROM
+     "ADDRESS" ADDRESS
+order by ADDRESS."ID"]]>
+	</queryString>
+	<field name="ADDRESS_ID" class="java.lang.Integer"/>
+	<field name="ADDRESS_FIRSTNAME" class="java.lang.String"/>
+	<field name="ADDRESS_LASTNAME" class="java.lang.String"/>
+	<field name="ADDRESS_STREET" class="java.lang.String"/>
+	<field name="ADDRESS_CITY" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="11" width="100" height="20" uuid="736ab416-1ec4-4734-b046-c4938af54e03"/>
+				<text><![CDATA[ADDRESS_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="11" width="100" height="20" uuid="c08e531b-b636-4b2c-a3ca-b97261de8292"/>
+				<text><![CDATA[ADDRESS_FIRSTNAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="11" width="100" height="20" uuid="a6fbd61d-4f22-44ee-984e-f3010285ddea"/>
+				<text><![CDATA[ADDRESS_LASTNAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="11" width="100" height="20" uuid="075d3a26-5615-4257-8c8f-89a3feda00b1"/>
+				<text><![CDATA[ADDRESS_STREET]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="11" width="100" height="20" uuid="38a6d2c3-75fc-464b-8eb0-ae2c954377ba"/>
+				<text><![CDATA[ADDRESS_CITY]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="27" y="31" width="100" height="20" uuid="29ac6cfa-f32b-4826-98b3-653299c29627"/>
+				<textFieldExpression><![CDATA[$F{ADDRESS_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="31" width="100" height="20" uuid="6c34b791-6030-4dde-8b54-7b3020cb84a9"/>
+				<textFieldExpression><![CDATA[$F{ADDRESS_FIRSTNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="31" width="100" height="20" uuid="fdc1a607-69c5-4c0a-a755-03818f67a365"/>
+				<textFieldExpression><![CDATA[$F{ADDRESS_LASTNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="325" y="31" width="100" height="20" uuid="eb56c99e-9a39-4f1b-854c-b67a5ea54680"/>
+				<textFieldExpression><![CDATA[$F{ADDRESS_STREET}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="31" width="100" height="20" uuid="0151ea16-b388-4691-94ef-082cd2b8e0df"/>
+				<textFieldExpression><![CDATA[$F{ADDRESS_CITY}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="334" splitType="Stretch">
+			<subreport>
+				<reportElement mode="Opaque" x="11" y="11" width="530" height="265" backcolor="#CCCCCC" uuid="a75d0efd-bfc6-4762-bbe0-e1742ea663f3"/>
+				<subreportParameter name="IDUsuario">
+					<subreportParameterExpression><![CDATA[$F{ADDRESS_ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreporteEjer04.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement x="0" y="330" width="100" height="1" uuid="20aa635c-6cca-4df2-b931-0fd3733a3830"/>
+			</break>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="97"/>
+	</columnFooter>
+	<summary>
+		<band height="55" splitType="Stretch"/>
+	</summary>
+</jasperReport>
