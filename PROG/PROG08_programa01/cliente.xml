@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datos_del_cliente>
+<id>02545719X</id>
+<nombre>fdgvdfg</nombre>
+<apellidos>fdgdfgfd</apellidos>
+<telefonos>
+<telefono>916457845</telefono>
+<telefono>69546545456</telefono>
+<telefono>+3456565656</telefono>
+<totaltelefonos>3</totaltelefonos>
+</telefonos>
+<mails>
+<mail>dfslgkjjdfsgl@gfdhfdgh.com</mail>
+</mails>
+<!--Se ha introducido un valor que no se reconoce ni como email ni teléfono: dfgdfgs@ghfdgf-->
+</datos_del_cliente>

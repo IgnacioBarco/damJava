@@ -1,0 +1,84 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:annotation>
+        <xs:documentation xml:lang ="es-es">
+            Tarea de formación e-Learning 
+            <modulo>Lenguajes de marcas y sistemas de gestión de información.</modulo>
+            <fecha_creación> 2018</fecha_creación>
+            <autor> Ignacio Barco Cano</autor>
+        </xs:documentation>
+    </xs:annotation>
+
+
+    <xs:element name="pedido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="datosenvio"/>
+                <xs:element ref="articulos"/>
+            </xs:sequence>
+            <xs:attribute name="codigo" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                    </xs:restriction>
+                </xs:simpleType> 
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="datosenvio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleado" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="fecha" type="xs:date" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="observacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="urgente" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="incompleto" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="plazorevision" type="xs:positiveInteger" minOccurs="1"  maxOccurs="1"/>
+                <xs:element ref="sucursal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sucursal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:positiveInteger"/>
+                <xs:element ref="direccion"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="direccion">
+        <xs:complexType>
+            <xs:attribute name="exposicionygestion" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="articulos" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="articulo" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="articulo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="unidades" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="precio" type="xs:string" minOccurs="1"  maxOccurs="1"/>
+                <xs:element name="observaciones" type="xs:string" minOccurs="0"  maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="codigo" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][A-Z][A-Z][-][0-9][0-9][0-9]"/>
+                    </xs:restriction>
+                </xs:simpleType> 
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

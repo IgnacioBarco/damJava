@@ -1,0 +1,40 @@
+
+
+<pedido codigo="A1234567">
+	<datosenvio>
+		<empleado>Luis Perez</empleado>
+		<fecha>2018-05-02</fecha>
+		<observacion>urgente</observacion>
+		<plazorevision>10</plazorevision>
+
+		<sucursal>
+			<id>127</id>
+			<direccion exposicionygestion="sdfsdf" />
+		</sucursal>
+	</datosenvio>
+
+	<articulos>
+
+		<articulo codigo="ABC-123">
+			<unidades>1</unidades>
+			<precio>44</precio>
+			<observaciones> </observaciones>
+		</articulo>
+
+		<articulo codigo="ABC-111">
+			<unidades>2</unidades>
+			<precio>33</precio>
+			<observaciones> </observaciones>
+		</articulo>
+
+		<articulo codigo="ABC-999">
+			<unidades>3</unidades>
+			<precio>21</precio>
+			<observaciones> </observaciones>
+		</articulo>
+
+
+	</articulos>
+
+</pedido>
+
