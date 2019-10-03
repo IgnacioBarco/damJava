@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datoscentro>
+    <centros>
+        <codigocentro>1015</codigocentro>
+        <nombrecentro>CP Los Danzantes</nombrecentro>
+        <direccion>C/Las Musas s/n</direccion>
+        <director>
+            <codigoprofesor>1010</codigoprofesor>
+            <nombreprofe>Montes García, M.Pilar</nombreprofe>
+            <nombreespecialiad>Matemáticas</nombreespecialiad>
+        </director>
+    </centros>
+    <profesores>
+        <profe>
+            <codigoprofesor>1010</codigoprofesor>
+            <nombreprofe>Montes García, M.Pilar</nombreprofe>
+            <nombreespecialiad>Matemáticas</nombreespecialiad>
+        </profe>
+        <profe>
+            <codigoprofesor>1011</codigoprofesor>
+            <nombreprofe>Arroba Conde, Manuel</nombreprofe>
+            <nombreespecialiad>Matemáticas</nombreespecialiad>
+        </profe>
+        <profe>
+            <codigoprofesor>1022</codigoprofesor>
+            <nombreprofe>Ruiz Lafuente, Manuel</nombreprofe>
+            <nombreespecialiad>Matemáticas</nombreespecialiad>
+        </profe>
+    </profesores>
+</datoscentro>

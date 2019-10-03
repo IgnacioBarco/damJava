@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/_CURSO%2016-17/ADAT_DAMEL_2016/ExamenFEBRERO16/ProyectosExamen17/ejerciciosexamen/datoscentro.xsd" uri="xml-resources/jaxb/datoscentros/datoscentro.xsd"/>
+    <system systemId="file:/D:/_CURSO%2016-17/ADAT_DAMEL_2016/ExamenFEBRERO16/ProyectosExamen17/ejerciciosexamenFEB17/datoscentro.xsd" uri="xml-resources/jaxb/datoscentros/datoscentro.xsd"/>
+</catalog>
